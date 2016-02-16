@@ -1,3 +1,30 @@
+/* http://localhost:1841/ext/classic/theme-neutral/sass/src/menu/Menu.scss:323 */
+.x-menu-body-default {
+    background: #fff;
+    padding: 0;
+}
+/* http://localhost:1841/ext/classic/theme-neutral/sass/src/menu/Menu.scss:328 */
+.x-menu-icon-separator-default {
+    left: 32px;
+    border-left: solid 1px #d0d0d0;
+    background-color: #fff;
+    width: 1px;
+}
+/* http://localhost:1841/ext/classic/theme-neutral/sass/src/menu/Menu.scss:335 */
+.x-menu-icon-separator-default.x-rtl {
+    left: auto;
+    right: 32px;
+}
+/* http://localhost:1841/ext/classic/theme-neutral/sass/src/menu/Menu.scss:342 */
+.x-menu-item-default {
+    border-width: 0;
+    cursor: pointer;
+}
+/* http://localhost:1841/ext/classic/theme-neutral/sass/src/menu/Menu.scss:346 */
+.x-menu-item-default.x-menu-item-active {
+    background-image: none;
+    background-color: #7fb5e4;
+}
 /* http://localhost:1841/ext/classic/theme-neutral/sass/src/menu/Menu.scss:358 */
 .x-nlg .x-menu-item-default.x-menu-item-active {
     background: #7fb5e4 repeat-x left top;

@@ -1,2 +1,2 @@
 // @tag full-page
-// @require C:\Server\web\apache\htdocs\SenchaCmd\BookSample\app.js
+// @require C:\Server\web\apache\htdocs\BookSample\app.js
