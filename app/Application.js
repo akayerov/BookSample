@@ -17,7 +17,7 @@ Ext.define('BookSample.Application', {
         console.log('launch1')
         var me = this; // #1
         me.splashscreen = Ext.getBody().mask( // #2
-            'Loading...', 'splashscreen'
+            'LoadingN', 'splashscreen'
         );
         me.splashscreen.addCls('splashscreen')
         Ext.DomHelper.insertFirst(Ext.query('.x-mask-msg')[0], {

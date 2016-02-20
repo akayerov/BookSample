@@ -162,7 +162,7 @@ Ext.define('Ext.ux.colorpick.ColorUtils', function (ColorUtils) {
                     else {
                         match = me.rgbaAltRe.exec(color);
                         if (match) {
-                            // scss shorthands =? rgba(red, 0.4), rgba(#222, 0.9), rgba(#444433, 0.8)
+                            // fontAwesome shorthands =? rgba(red, 0.4), rgba(#222, 0.9), rgba(#444433, 0.8)
                             ret = me.parseColor(match[1]);
                             // we have HSV filled in, so poke on "a" and we're done
                             ret.a = parseFloat(match[2]);

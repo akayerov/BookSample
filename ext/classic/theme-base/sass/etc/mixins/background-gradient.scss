@@ -214,7 +214,7 @@
  * Each of these gradient names corresponds to a function named linear-gradient[name].
  * Themes can override these functions to customize the color stops that they return.
  * For example, to override the glossy-button gradient function add a function named
- * "linear-gradient-glossy-button" to a file named "sass/etc/mixins/background-gradient.scss"
+ * "linear-gradient-glossy-button" to a file named "sass/etc/mixins/background-gradient.fontAwesome"
  * in your theme.  The function should return the result of calling the Compass linear-gradient
  * function with the desired direction and color-stop information for the gradient.  For example:
  *

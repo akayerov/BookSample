@@ -2360,7 +2360,7 @@
     font-weight: normal;
     font-style: normal;
 }
-/* http://localhost:1841/sass/etc/all.scss:4 */
+/* http://localhost:1841/sass/etc/all.scss:6 */
 .x-mask.splashscreen {
     /*
  * This is is imported by virtue of "sass.etc" in "app.json".
@@ -2368,7 +2368,7 @@
     background-color: white;
     opacity: 1;
 }
-/* http://localhost:1841/sass/etc/all.scss:8 */
+/* http://localhost:1841/sass/etc/all.scss:10 */
 .x-mask-msg.splashscreen,
 .x-mask-msg.splashscreen div {
     font-size: 16px;
@@ -2378,11 +2378,11 @@
     background-color: transparent;
     background-position: top center;
 }
-/* http://localhost:1841/sass/etc/all.scss:19 */
+/* http://localhost:1841/sass/etc/all.scss:21 */
 .x-message-box .x-window-body .x-box-inner {
     min-height: 110px !important;
 }
-/* http://localhost:1841/sass/etc/all.scss:22 */
+/* http://localhost:1841/sass/etc/all.scss:24 */
 .x-splash-icon {
     background-image: url('images/logo.png') !important;
     margin-top: -30px;

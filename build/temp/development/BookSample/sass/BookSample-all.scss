@@ -3,6 +3,8 @@ $image-search-path: 'C:/Server/web/apache/htdocs/BookSample/build/development/Bo
 $theme-name:  dynamic( 'theme-triton' );
 $include-booksample-application: dynamic(true);;
 $include-booksample-store-personnel: dynamic(true);;
+$include-booksample-view-login-login: dynamic(true);;
+$include-booksample-view-login-logincontroller: dynamic(true);;
 $include-booksample-view-main-list: dynamic(true);;
 $include-booksample-view-main-main: dynamic(true);;
 $include-booksample-view-main-maincontroller: dynamic(true);;
@@ -881,7 +883,6 @@ $include-ext-view-view: dynamic(true);;
 $include-ext-window-messagebox: dynamic(true);;
 $include-ext-window-toast: dynamic(true);;
 $include-ext-window-window: dynamic(true);;
-$include-packt-view-login-login: dynamic(true);;
 $output-paths: ("path": "../../classic/resources", "shared": "../../resources");
 
 /* ======================== ETC ======================== */

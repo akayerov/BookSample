@@ -1,6 +1,6 @@
 // NOTE: this file contains the variables for all types of form fields.  This is done
-// (as opposed to having separate files for Text.scss, Checkbox.scss etc) so that grid
-// editor sass vars (in Editor.scss) can derive from any of the form field vars simply
+// (as opposed to having separate files for Text.fontAwesome, Checkbox.fontAwesome etc) so that grid
+// editor sass vars (in Editor.fontAwesome) can derive from any of the form field vars simply
 // because Ext.grid.plugin.Editing requires Ext.form.field.Base.  Grid editor sass
 // vars cannot live in the same files as normal form field vars because they also derive
 // some of their values from grid vars.

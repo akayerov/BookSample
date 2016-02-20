@@ -5,7 +5,7 @@
 .#{$prefix}btn-icon-el {
     // The extra "x-btn-icon-el" class is added to the selector to increase specificity
     // of these rules over the default button rules since there is no way to control the
-    // ordering of this file relative to Button.scss without creating an explicit dependency
+    // ordering of this file relative to Button.fontAwesome without creating an explicit dependency
 
     &.#{$prefix}tbar-page-first {
         @if $enable-font-icons and ($grid-paging-toolbar-first-glyph != null) {

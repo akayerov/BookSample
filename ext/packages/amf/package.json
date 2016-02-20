@@ -15,10 +15,10 @@
 
     "sass": {
         /**
-         * The root namespace to use when mapping *.scss files to classes in the
+         * The root namespace to use when mapping *.fontAwesome files to classes in the
          * sass/src and sass/var directories. For example, "Ext.view.View" would
-         * map to "sass/src/view/View.scss". If we changed this to "Ext.view" then
-         * it would map to "sass/src/View.scss".
+         * map to "sass/src/view/View.fontAwesome". If we changed this to "Ext.view" then
+         * it would map to "sass/src/View.fontAwesome".
          */
         "namespace": "Ext",
 

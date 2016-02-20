@@ -1,9 +1,9 @@
 <project name="x-sass-impl">
     
     <!--
-    Uses the compiler to generate the top-level scss file for the app
+    Uses the compiler to generate the top-level fontAwesome file for the app
     by using the current set of js files to determine the Components
-    used by the app, then including the corresponding scss files into the 
+    used by the app, then including the corresponding fontAwesome files into the
     app's style
     -->
     <target name="-compile-sass" depends="-init-app-js-files">
@@ -183,7 +183,7 @@
 
     <!--
     This target builds Ext JS 4.2+ style themes, first generating the top-level
-    scss file, then running compass with the css, sass, and config options set
+    fontAwesome file, then running compass with the css, sass, and config options set
     -->
     <target name="-compass-compile-theme-package" depends="-load-sass-page">
         <x-run-if-true value="${enable.ext42.themes}">
@@ -293,7 +293,7 @@
 
     <!--
     This target builds Touch style themes, by running compass
-    over the directory containing the manually maintined scss files
+    over the directory containing the manually maintined fontAwesome files
     -->
     <target name="-compass-compile-sass-dir">
         <x-run-if-true value="${enable.touch.themes}">

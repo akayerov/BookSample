@@ -22,7 +22,7 @@
     </target>
     
     <!--
-    Uses the compiler to generate a special theme-only scss file containing
+    Uses the compiler to generate a special theme-only fontAwesome file containing
     rules for all framework / package / app components.  This is then used
     by the slicer example page to capture theme sprites
     -->
@@ -102,7 +102,7 @@
     </target>
 
     <!--
-    Compiles the scss file for the theme slicer page
+    Compiles the fontAwesome file for the theme slicer page
     -->
     <target name="-compass-compile-slicer-css" depends="-compile-slicer-sass">
         <if>
