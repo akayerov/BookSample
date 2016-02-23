@@ -4,7 +4,11 @@
 Ext.define('BookSample.view.login.LoginController', { // #1
     extend: 'Ext.app.ViewController', // #2
     alias: 'controller.login', // #3
-    onTextFieldSpecialKey: function(field, e, options){ }, // #4
+    onTextFieldSpecialKey: function(field, e, options){
+        if (e.getKey() === e.ENTER) {
+            this.doLogin();
+        }
+    },
     onTextFieldKeyPress: function(field, e, options){ }, // #5
     onButtonClickCancel: function(button, e, options){
         console.log('login cancel'); // #1
@@ -22,6 +26,7 @@ Ext.define('BookSample.view.login.LoginController', { // #1
     doLogin: function() {
         var me = this,
         form = me.lookupReference('formLogin');
+        this.getView().mask('Authenticating... Please wait...');
         form.submit({
             clientValidation: true, // #3
               url: 'php/security/login.php', // #4
@@ -32,6 +37,7 @@ Ext.define('BookSample.view.login.LoginController', { // #1
     },
     onLoginFailure: function(form, action) {
         console.log('login LoginFailure');
+        this.getView().unmask();
         var result = Ext.JSON.decode(action.response.responseText, true); //#3
         if (!result){ //#4
             result = {};
@@ -66,21 +72,9 @@ Ext.define('BookSample.view.login.LoginController', { // #1
     }, // #9
     onLoginSuccess: function(form, action) {
         console.log('login LoginSuccess');
-
-        result = {};
-        result.success = false;
-        result.msg = action.response.responseText;
-
-        Ext.Msg.show({
-            title:'OK',
-            msg:  result.msg,
-            icon: Ext.Msg.OK,
-            buttons: Ext.Msg.OK
-        });
-
-
-//        this.getView().close(); //#1
-//        Ext.create('BookSample.view.main.Main'); //#2
+        this.getView().unmask();
+        this.getView().close(); //#1
+        Ext.create('BookSample.view.main.Main'); //#2
     } // #10
 });
 

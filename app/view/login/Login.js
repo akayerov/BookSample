@@ -29,12 +29,18 @@ Ext.define('BookSample.view.login.Login', { // #1
             items: [
                 {
                     name: 'user',
-                    fieldLabel: 'User'
+                    fieldLabel: 'User',
+                    listeners: {
+                        specialKey: 'onTextFieldSpecialKey'
+                    }
                 },
                 {
                     inputType: 'password', //#20
                     name: 'password',
-                    fieldLabel: 'Password'
+                    fieldLabel: 'Password',
+                    listeners: {
+                        specialKey: 'onTextFieldSpecialKey'
+                    }
                 }
         ]}
     ],
